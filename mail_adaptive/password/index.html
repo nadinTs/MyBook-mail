@@ -11,26 +11,19 @@
     	<td valign="top" align="center" style="font-family:Tahoma, sans-serif">
 
             <style>
-                @media only screen and (min-width: 200px) {
-
-                    .device--size{
-                        display: table;
-                    }
-                    .full--size{
-                        display: none;
-                    }
-                }
-                @media only screen and (min-width: 700px) {
-                    .device--size{
-                        display: none;
-                    }
-                    .full--size{
-                        display: table;
-                    }
-                }
+                   @media screen and (max-width:700px) {
+                       table[class="device--size"] {
+                          display: table !important;
+                       }
+                   }
+                   @media screen and (min-width:700px) and (max-width: 7000px) {
+                       table[class="full--size"] {
+                          display: table !important;
+                       }
+                   }
             </style>
 
-            <table width="346" height="100%" cellpadding="0" cellspacing="0" align="center" border="0" bgcolor="#ffffff" style="font-family:Tahoma, sans-serif" class="device--size">
+            <table width="346" height="100%" cellpadding="0" cellspacing="0" align="center" border="0" bgcolor="#ffffff" style="font-family:Tahoma, sans-serif; display: none;" class="device--size">
                 <tbody>
 
                 <!-- HEADER -->
@@ -102,7 +95,7 @@
                 </tbody>
             </table>
 
-            <table width="700" height="100%" cellpadding="0" cellspacing="0" align="center" border="0" bgcolor="#ffffff" style="font-family:Tahoma, sans-serif" class="full--size">
+            <table width="700" height="100%" cellpadding="0" cellspacing="0" align="center" border="0" bgcolor="#ffffff" style="font-family:Tahoma, sans-serif; display: none;" class="full--size">
 				<tbody>
 
             <!-- HEADER -->
