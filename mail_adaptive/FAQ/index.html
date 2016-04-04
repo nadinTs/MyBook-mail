@@ -1,8 +1,47 @@
-﻿<!DOCTYPE html>
-<html>
-<head lang="en">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
 	<meta charset="UTF-8">
 	<title></title>
+    <style>
+        @media only screen and (max-width:700px) {
+            table[class="fullsize"] {
+                display: none !important;
+            }
+            table[class="devicesize"] {
+                display: table !important;
+            }
+
+            #fullsize {
+                display: none !important;
+            }
+            #devicesize{
+                display: table !important;
+                width : auto !important;
+                overflow : visible !important;
+                float : none !important;
+            }
+
+        }
+        @media only screen and (min-width:700px) {
+            table[class="fullsize"] {
+                display: table !important;
+            }
+            table[class="devicesize"] {
+                display: none !important;
+            }
+            #fullsize {
+                display: table !important;
+            }
+            #devicesize{
+                display: none !important;
+                width : auto !important;
+                overflow : hidden !important;
+                float : none !important;
+            }
+        }
+    </style>
 </head>
 <body>
 <table width="100%" height="100%" cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" style="font-family:Tahoma, sans-serif">
@@ -10,20 +49,8 @@
     <tr>
     	<td valign="top" align="center" style="font-family:Tahoma, sans-serif">
 
-            <style>
-                   @media screen and (max-width:700px) {
-                       table[class="device--size"] {
-                          display: table !important;
-                       }
-                   }
-                   @media screen and (min-width:700px) and (max-width: 7000px) {
-                       table[class="full--size"] {
-                          display: table !important;
-                       }
-                   }
-            </style>
-
-            <table width="346" height="100%" cellpadding="0" cellspacing="0" align="center" border="0" bgcolor="#ffffff" style="font-family:Tahoma, sans-serif; display: none;" class="device--size">
+        <div id="devicesize" style="width:0; overflow:hidden;float:left; display:none">
+            <table width="346" height="100%" cellpadding="0" cellspacing="0" align="center" border="0" bgcolor="#ffffff" style="font-family:Tahoma, sans-serif; display: none;" class="devicesize">
                 <tbody>
 
                 <!-- HEADER -->
@@ -241,12 +268,10 @@
 
                 </tbody>
             </table>
+        </div>
 
-
-
-
-
-            <table width="700" height="100%" cellpadding="0" cellspacing="0" align="center" border="0" bgcolor="#ffffff" style="font-family:Tahoma, sans-serif; display: none;" class="full--size">
+        <div id="fullsize" style="display: table;">
+            <table width="700" height="100%" cellpadding="0" cellspacing="0" align="center" border="0" bgcolor="#ffffff" style="font-family:Tahoma, sans-serif; display: table;" class="fullsize">
 				<tbody>
 
                 <!-- HEADER -->
@@ -476,6 +501,7 @@
 
 				</tbody>
 			</table>
+        </div>
 		</td>
 	</tr>
 	</tbody>
