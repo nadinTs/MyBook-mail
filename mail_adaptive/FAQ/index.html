@@ -21,6 +21,7 @@
                 width : auto !important;
                 overflow : visible !important;
                 float : none !important;
+                white-space: inherit !important;
             }
 
         }
@@ -33,6 +34,8 @@
             }
             #fullsize {
                 display: table !important;
+                width: auto !important;
+                white-space: inherit !important;
             }
             #devicesize{
                 display: none !important;
@@ -49,7 +52,7 @@
     <tr>
     	<td valign="top" align="center" style="font-family:Tahoma, sans-serif">
 
-        <div id="devicesize" style="width:0; overflow:hidden;float:left; display:none">
+        <div id="devicesize" style="width:0; overflow:hidden;float:left; display:none; white-space:nowrap;">
             <table width="346" height="100%" cellpadding="0" cellspacing="0" align="center" border="0" bgcolor="#ffffff" style="font-family:Tahoma, sans-serif; display: none;" class="devicesize">
                 <tbody>
 
@@ -76,13 +79,15 @@
                                         <tr>
                                             <td width="200" align="center" height="70" valign="middle" style="font-size:16px; line-height: 21px;">
                                                 <font style=" color:#000000; font-size:16px; line-height: 21px; font-family:Trebuchet MS, Arial, sans-serif;">
-                                                    Уважаемый сотрудник!
+                                                    <div style="white-space:nowrap; font:16px;">
+                                                        Уважаемый сотрудник!
+                                                    </div>
                                                 </font>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td width="200" align="left" height="1" valign="middle" style="font-size:11px; line-height: 12px;">
-                                                <font style=" color:#000000; font-size:11px; line-height: 12px; font-family:Trebuchet MS, Arial, sans-serif;">
+                                            <td width="200" align="left" height="1" valign="middle">
+                                                <font style=" color:#000000; font-size:11px;  line-height: 12px; font-family:Trebuchet MS, Arial, sans-serif;">
                                                     Вы подключены к корпоративной<br/>
                                                     электронной библиотеке<br/>
                                                     на технологиях MyBook.<br/>
@@ -270,7 +275,7 @@
             </table>
         </div>
 
-        <div id="fullsize" style="display: table;">
+        <div id="fullsize" style="display: table; width:0; white-space:nowrap;">
             <table width="700" height="100%" cellpadding="0" cellspacing="0" align="center" border="0" bgcolor="#ffffff" style="font-family:Tahoma, sans-serif; display: table;" class="fullsize">
 				<tbody>
 
