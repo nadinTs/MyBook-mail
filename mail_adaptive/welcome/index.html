@@ -57,12 +57,20 @@
             table[class="slider"]{
                 width: 100% !important;
             }
+            td[class="slider_img"]{
+                height: 220px !important;
+            }
             span[class="header_title"] {
                 font-size: 26px !important;
             }
             span[class="header_subtitle"] {
                 font-size: 18px !important;
                 line-height: 24px !important;
+            }
+        }
+        @media only screen and (max-device-width: 435px), only screen and (max-width: 435px) {
+            td[class="slider_img"]{
+                height: 159px !important;
             }
         }
         .header{
@@ -81,7 +89,7 @@
                         <table width="100%" border="0" cellspacing="0" cellpadding="0" class="header">
                             <tr>
                                 <td height="130" bgcolor="#00001e" style="background: url('images/header--main_t.jpg') center no-repeat;" align="center" valign="bottom">
-                                    <table width="700" border="0" cellspacing="0" cellpadding="0" class="header">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="header">
                                         <tr>
                                             <a href="https://mybook.ru">
                                                 <td height="130" valign="top" align="center"></td>
@@ -92,7 +100,7 @@
                             </tr>
                             <tr>
                                 <td height="170" bgcolor="#00001e" style="background: url('images/header--main_b.jpg') center no-repeat;" align="center" valign="bottom">
-                                    <table width="700" border="0" cellspacing="0" cellpadding="0" class="header">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="header">
                                         <tr>
                                             <td height="170" valign="top" align="center" class="header_title" style="line-height: 22px !important;">
                                                 <font style=" color:#ffffff; font-size:26px !important; line-height: 40px !important; font-family:Trebuchet MS, Arial, sans-serif; text-align: center;">
@@ -114,7 +122,7 @@
                             </tr>
                             <tr>
                                 <td height="120" bgcolor="#f9b80f" style="background: url('images/bg_s.jpg') repeat; line-height: 22px !important;" align="center" valign="top">
-                                    <table width="500" border="0" cellspacing="0" cellpadding="0" class="top_text">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="top_text" style="padding: 0 10px;">
                                         <tr>
                                             <td width="100%" valign="top" align="center">
                                                 <font style=" color:#000000; font-size:18px !important; line-height: 24px !important; font-family:Trebuchet MS, Arial, sans-serif; text-align: center;">
@@ -130,8 +138,9 @@
                                     </table>
                                 </td>
                             </tr>
+
                             <tr>
-                                <td height="80" bgcolor="#f9b80f" style="background: url('images/bg_s.jpg') repeat; height: 80px;" align="center" valign="middle">
+                                <td height="80" bgcolor="#f9b80f" style="background: url('images/bg_s.jpg') repeat; height: 80px; min-height:80px; max-height:80px; padding: 0; margin: 0;" align="center" valign="middle">
                                     <table width="320" border="0" cellspacing="0" cellpadding="0" class="top_btn">
                                         <tr>
                                             <td height="60" valign="top" align="center">
@@ -149,17 +158,22 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td height="370" bgcolor="#f9b80f" style="background: #f9b80f;" align="center" valign="middle">
-                                    <table width="700" border="0" cellspacing="0" cellpadding="0" class="slider">
+                                <td height="1" bgcolor="#f9b80f" style="background: url('images/bg_s.jpg') repeat;" align="center" valign="middle">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="slider">
                                         <tr>
-                                            <td height="370" valign="top" align="center" style="background:url('images/slider--main.jpg') center no-repeat;"></td>
+                                            <td height="1" valign="bottom" align="center" class="slider_img">
+                                                <img src="images/slider--main_t.jpg" style="display:block; width:100%; margin: 0; padding: 0;">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="90" valign="top" align="center" style="background:url('images/slider--main_b.jpg') center bottom no-repeat; padding:0; margin: 0; max-height:90px;" bgcolor="#58606b"></td>
                                         </tr>
                                     </table>
                                 </td>
                             </tr>
                             <tr>
                                 <td height="130" bgcolor="#58606b" style="background: url('images/bg_g.jpg') repeat; line-height: 22px !important;" align="center" valign="top">
-                                    <table width="500" border="0" cellspacing="0" cellpadding="0" class="top_text">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="top_text" style="padding: 0 10px;">
                                         <tr>
                                             <td width="100%" valign="top" align="center">
                                                 <font style=" color:#ffffff; font-size:18px !important; line-height: 24px !important; font-family:Trebuchet MS, Arial, sans-serif; text-align: center;">
@@ -176,7 +190,7 @@
                             </tr>
                             <tr>
                                 <td height="70" bgcolor="#58606b" style="background: url('images/bg_g.jpg') repeat; height: 70px;" align="center" valign="middle">
-                                    <table width="320" border="0" cellspacing="0" cellpadding="0" class="top_btn">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="top_btn">
                                         <tr>
                                             <td height="70" valign="middle" align="center" bgcolor="#58606b" style="background: url('images/bg_g.jpg') repeat; height: 70px;">
                                                 <a href="#" target="_blank" style="display: block; max-height:55px; min-height:55px; height: 55px;">
@@ -188,8 +202,8 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td height="200" bgcolor="#f9b80f" style="background: #f9b80f;" align="center" valign="middle">
-                                    <table width="700" border="0" cellspacing="0" cellpadding="0" class="slider">
+                                <td height="200" bgcolor="#58606b" style="background: #58606b;" align="center" valign="middle">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="slider">
                                         <tr>
                                             <td height="200" valign="top" align="center" style="background:url('images/books--main.jpg') center no-repeat;"></td>
                                         </tr>
@@ -198,7 +212,7 @@
                             </tr>
                             <tr>
                                 <td height="100" bgcolor="#ffffff" style="background: #ffffff; line-height: 22px !important;" align="center" valign="top">
-                                    <table width="500" border="0" cellspacing="0" cellpadding="0" class="top_text">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="top_text" style="padding: 0 10px;">
                                         <tr>
                                             <td width="100%" valign="top" align="center">
                                                 <font style=" color:#000000; font-size:18px !important; line-height: 24px !important; font-family:Trebuchet MS, Arial, sans-serif; text-align: center;">
@@ -215,7 +229,7 @@
                             </tr>
                             <tr>
                                 <td height="80" bgcolor="#ffffff" style="background: #ffffff; height: 80px;" align="center" valign="middle">
-                                    <table width="325" border="0" cellspacing="0" cellpadding="0">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="max-width:325px;">
                                         <tr>
                                             <td width="65" valign="middle" align="center">
                                                 <a href="https://www.facebook.com/MyBookRu" target="_blank" style="display: block; max-height:50px; min-height:50px; height: 50px;">
@@ -247,8 +261,8 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td height="70" bgcolor="#000000" style="background: url('images/slider--bottom_t.jpg') center no-repeat;" align="center" valign="bottom">
-                                    <table width="700" border="0" cellspacing="0" cellpadding="0" class="header">
+                                <td height="70" bgcolor="#000000" style="background: url('images/slider--bottom_t.jpg') no-repeat center" align="center" valign="bottom">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="header">
                                         <tr>
                                             <td height="70" valign="middle" align="center" style="line-height: 40px !important;">
                                                 <font style=" color:#ffffff; font-size:18px !important; line-height: 40px !important; font-family:Trebuchet MS, Arial, sans-serif; text-align: center;">
@@ -262,7 +276,7 @@
                             <tr>
                                 <td height="80" bgcolor="000000" style="background: #000000;" align="center" valign="middle">
                                     <a href="https://mybook.ru" target="_blank" style="display:block;">
-                                        <table width="700" border="0" cellspacing="0" cellpadding="0" class="slider">
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="slider">
                                             <tr>
                                                 <td height="80" valign="middle" align="center" style="background:url('images/slider--bottom_b.jpg') center no-repeat;"></td>
                                             </tr>
@@ -273,7 +287,7 @@
 
                             <tr>
                                 <td height="90" bgcolor="#ffffff" style="background: #ffffff;" align="center" valign="middle">
-                                    <table width="600" border="0" cellspacing="0" cellpadding="0" class="header">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="header">
                                         <tr>
                                             <td valign="middle" align="center" style="line-height: 16px !important;">
                                                 <font style=" color:#000000; font-size:11px !important; line-height: 16px !important; font-family:Trebuchet MS, Arial, sans-serif; text-align: center;">
